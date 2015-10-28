@@ -1,0 +1,30 @@
+{
+  "name": "projeto-laravel-frontend",
+  "description": "Front-End de Gerenciador de Projetos",
+  "main": "",
+  "authors": [
+    "Lucas Antonio <lucas.bialar@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "https://github.com/lordobob/projeto-laravel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.1",
+    "angular-route": "1.4.1",
+    "angular-resource": "1.4.1",
+    "angular-messages": "1.4.1",
+    "angular-bootstrap": "0.13.0",
+    "angular-strap": "2.2.4",
+    "angular-oauth2": "~3.0.1"
+  }
+}
