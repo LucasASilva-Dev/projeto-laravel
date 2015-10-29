@@ -1,9 +1,10 @@
 /**
  * Created by Lucas on 28/10/2015.
  */
-var app = angular.module('app',['ngRoute','angular-oauth2','app.controllers']);
+var app = angular.module('app',['ngRoute','angular-oauth2','app.controllers','app.services']);
 
 angular.module('app.controllers',['ngMessages','angular-oauth2']);
+angular.module('app.services',['ngResource']);
 
 app.provider('appConfig', function () {
   var config = {
@@ -18,8 +19,23 @@ app.provider('appConfig', function () {
 });
 
 app.config([
-    '$routeProvider', 'OAuthProvider', 'appConfigProvider',
-    function ($routeProvider, OAuthProvider, appConfigProvider) {
+    '$routeProvider', '$httpProvider', 'OAuthProvider', 'OAuthTokenProvider', 'appConfigProvider',
+    function ($routeProvider, $httpProvider, OAuthProvider, OAuthTokenProvider, appConfigProvider) {
+
+        $httpProvider.defaults.transformResponse = function(data,headers) {
+            var headersGetter = headers();
+            if(headersGetter['content-type'] == 'application/json' ||
+                headersGetter['content-type'] == 'text/json'){
+                var dataJson = JSON.parse(data);
+
+                if(dataJson.hasOwnProperty('data')){
+                    dataJson = dataJson.data;
+                }
+
+                return dataJson;
+            }
+                return data;
+        };
 
     $routeProvider
         .when('/login',{
@@ -27,15 +43,60 @@ app.config([
             controller: 'LoginController'
 
         })
+        .when('/clients', {
+            templateUrl: 'build/views/client/list.html',
+            controller: 'ClientListController'
+        })
+        .when('/clients/new', {
+            templateUrl: 'build/views/client/new.html',
+            controller: 'ClientNewController'
+        })
+        .when('/clients/:id/edit', {
+            templateUrl: 'build/views/client/edit.html',
+            controller: 'ClientEditController'
+        })
+        .when('/clients/:id/remove', {
+            templateUrl: 'build/views/client/remove.html',
+            controller: 'ClientRemoveController'
+        })
+
+        .when('/project/:id/notes', {
+            templateUrl: 'build/views/project-notes/index.html',
+            controller: 'ClientRemoveController'
+        })
+        .when('/project/:id/notes/notes:idNote', {
+            templateUrl: 'build/views/project-note/note.html',
+            controller: 'ClientRemoveController'
+        })
+        .when('/project/:id/notes/new/', {
+            templateUrl: 'build/views/client/remove.html',
+            controller: 'ClientRemoveController'
+        })
+        .when('/clients/:id/remove', {
+            templateUrl: 'build/views/client/remove.html',
+            controller: 'ClientRemoveController'
+        })
+        .when('/clients/:id/remove', {
+            templateUrl: 'build/views/client/remove.html',
+            controller: 'ClientRemoveController'
+        })
         .when('/home', {
             templateUrl: 'build/views/home.html',
             controller: 'HomeController'
-        })
+        });
+
         OAuthProvider.configure({
             baseUrl: appConfigProvider.config.baseUrl ,
             clientId: 'appclient1',
             clientSecret: 'secret', // optional
             grantPath: 'oauth/access_token'
+        });
+
+        OAuthTokenProvider.configure({
+            name: 'token',
+            options: {
+                secure: false
+            }
         });
 
 }]);

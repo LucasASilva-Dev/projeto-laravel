@@ -112,11 +112,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Limit clients to specific grants
+    | Limit client to specific grants
     |--------------------------------------------------------------------------
     |
-    | Whether or not to limit clients to specific grant types. This is useful
-    | to allow only trusted clients to access your API differently.
+    | Whether or not to limit client to specific grant types. This is useful
+    | to allow only trusted client to access your API differently.
     |
     */
 
@@ -124,11 +124,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Limit clients to specific scopes
+    | Limit client to specific scopes
     |--------------------------------------------------------------------------
     |
-    | Whether or not to limit clients to specific scopes. This is useful to
-    | only allow specific clients to use some scopes.
+    | Whether or not to limit client to specific scopes. This is useful to
+    | only allow specific client to use some scopes.
     |
     */
 
