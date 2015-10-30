@@ -74,7 +74,7 @@ class ProjectNoteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, $noteId)
+    public function destroy( $noteId )
     {
         return $this->repository->delete($noteId);
     }
