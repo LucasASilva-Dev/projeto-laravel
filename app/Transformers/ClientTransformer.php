@@ -10,8 +10,9 @@ namespace CodeProject\Transformers;
 
 
 use CodeProject\Entities\Client;
+use League\Fractal\TransformerAbstract;
 
-class ClientTransformer
+class ClientTransformer extends TransformerAbstract
 {
 
     /**

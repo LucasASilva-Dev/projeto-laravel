@@ -7,5 +7,6 @@ angular.module('app.controllers')
         //$cookies.get('nomedoCookie);
 
         console.log($cookies.getObject('user').email);
+        console.log($cookies.getObject('user').id);
 
     }]);
