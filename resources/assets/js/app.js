@@ -14,10 +14,9 @@ app.provider('appConfig', function () {
       baseUrl: 'http://localhost:8000',
       project: {
           status: [
-              {value: '1', label: 'Nao Iniciado'},
-              {value: '2', label: 'Iniciado'},
-              {value: '3', label: 'Concluido'},
-
+              {value: 1, label: 'Nao Iniciado'},
+              {value: 2, label: 'Iniciado'},
+              {value: 3, label: 'Concluido'}
           ]
       }
   };
