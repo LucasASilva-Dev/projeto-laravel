@@ -7,31 +7,21 @@ angular.module('app.controllers')
         function ($scope, $location, $cookies, Project, Client, appConfig){
             $scope.project = new Project();
 
-            $scope.clients = Client.query();
-
             $scope.status = appConfig.project.status;
 
             $scope.save = function () {
                 if($scope.form.$valid){
-
                     $scope.project.owner_id = $cookies.getObject('user').id;
-
                     $scope.project.$save().then( function(){
                         $location.path('/projects');
                     })
-
                 }
+            };
 
-            }
-
-            $scope.formatName = function(id) {
-              if(id){
-                  for(var i in $scope.clients){
-                      if($scope.clients[i].id == id){
-                          return $scope.clients[i].name;
-                      }
-                  }
-              }
+            $scope.formatName = function(model) {
+                if(model){
+                    return model.name;
+                }
                 return '';
             };
 
@@ -40,5 +30,9 @@ angular.module('app.controllers')
                     search: name,
                     searchFields: 'name:like'
                 }).$promise;
+            };
+
+            $scope.selectClient = function (item){
+                $scope.project.client_id = item.id;
             };
     }]);
