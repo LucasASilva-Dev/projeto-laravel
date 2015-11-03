@@ -27,7 +27,8 @@
                                 <input type="text" autocomplete="off" name="client_id" class="form-control" ng-model="clientSelected"
                                        typeahead="o as o.name for o in getClients($viewValue)|limitTo:10" required
                                        typeahead-input-formatter="formatName($model)"
-                                       typeahead-on-select="selectClient($item)">
+                                       typeahead-on-select="selectClient($item)"
+                                       typeahead-editable="false"/>
 
                                 <div ng-messages="form.client_id.$error" class="help-block" ng-show="form.client_id.$touched">
                                     <div ng-message="required">Campo Obrigatório</div>
