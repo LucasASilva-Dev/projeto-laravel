@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9730f7c5-ce91-4162-a1f7-de3d2547f731" name="Default" comment="Terminando o cadastro de project">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/ClientRepositoryEloquent.php" afterPath="$PROJECT_DIR$/app/Repositories/ClientRepositoryEloquent.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/views/project/new.html" afterPath="$PROJECT_DIR$/public/build/views/project/new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/views/project/new.html" afterPath="$PROJECT_DIR$/resources/assets/js/views/project/new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/controllers/project/projectNew.js" afterPath="$PROJECT_DIR$/public/build/js/controllers/project/projectNew.js" />
@@ -61,8 +62,8 @@
       <file leaf-file-name="new.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/views/project/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69009584">
-              <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.29944548">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -72,7 +73,17 @@
         <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project/projectNew.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="29" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="29" />
+              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientRepositoryEloquent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/ClientRepositoryEloquent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.703703">
+              <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -144,7 +155,6 @@
         <option value="$PROJECT_DIR$/resources/assets/js/views/client/list.html" />
         <option value="$PROJECT_DIR$/resources/assets/css/app.css" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Repositories/ClientRepositoryEloquent.php" />
         <option value="$PROJECT_DIR$/app/Presenters/ClientPresenter.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/controllers/client/clientList.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/services/client.js" />
@@ -189,6 +199,7 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/controllers/project/projectNew.js" />
+        <option value="$PROJECT_DIR$/app/Repositories/ClientRepositoryEloquent.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/views/project/new.html" />
       </list>
     </option>
@@ -615,7 +626,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="projectN&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project/projectNew.js&#10;gu&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;project&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/project.js&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/app.js&#10;new&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project/new.html&#10;app.bla&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;app.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/app.js&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;User&#9;null&#9;null&#10;login.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/user.js&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;ProjectNoteCon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;list&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project-note/list.html&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;PRojec&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteRemove.js&#10;projectnotecon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;proje&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteNew.js&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;client.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;clientLi&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/client/clientList.js&#10;gul&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;client&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;g&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/.env&#10;rou&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="ClientRe&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Repositories/ClientRepositoryEloquent.php&#10;projectN&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project/projectNew.js&#10;gu&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;project&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/project.js&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/app.js&#10;new&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project/new.html&#10;app.bla&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;app.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/app.js&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;User&#9;null&#9;null&#10;login.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/user.js&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;ProjectNoteCon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;list&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project-note/list.html&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;PRojec&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteRemove.js&#10;projectnotecon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;proje&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteNew.js&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;client.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;clientLi&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/client/clientList.js&#10;gul&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;client&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;g&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/.env&#10;rou&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -724,7 +735,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6111111" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38255033" sideWeight="0.49707174" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38255033" sideWeight="0.49707174" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.459069" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -844,14 +855,6 @@
           <folding>
             <element signature="e#44#91#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/ClientRepositoryEloquent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +1153,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1446544977639" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1446545723743" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1171,18 +1174,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/ClientRepositoryEloquent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.703703">
+          <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project/projectNew.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="29" />
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/views/project/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69009584">
-          <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.29944548">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
           <folding />
         </state>
       </provider>
