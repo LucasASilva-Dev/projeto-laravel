@@ -40,5 +40,5 @@ angular.module('app.controllers')
                     search: name,
                     searchFields: 'name:like'
                 }).$promise;
-            }
+            };
     }]);
