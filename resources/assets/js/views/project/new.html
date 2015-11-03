@@ -29,7 +29,8 @@
                                     <option value=""><-- Select o client ></option>
                                 </select> -->
                                 <input type="text" name="client_id" class="form-control" ng-model="project.client_id"
-                                        typeahead="o.id as o.name for o in clients|filter:$viewValue|limitTo:10" required>
+                                        typeahead="o.id as o.name for o in clients|filter:$viewValue|limitTo:10" required
+                                        typeahead-input-formatter="formatName($model)">
 
                                 <div ng-messages="form.client_id.$error" class="help-block" ng-show="form.client_id.$touched">
                                     <div ng-message="required">Campo Obrigatório</div>
