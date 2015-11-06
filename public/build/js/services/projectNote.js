@@ -7,9 +7,12 @@ angular.module('app.services')
         return $resource(appConfig.baseUrl + '/project/:id/note/:idNote',{
             id: '@id',
             idNote: '@idNote'
-        },{
+            },{
             update: {
                 method: 'PUT'
+            },
+            get: {
+                method: 'GET'
             }
         });
     }]);

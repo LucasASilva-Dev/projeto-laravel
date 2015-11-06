@@ -2,10 +2,10 @@
  * Created by Lucas on 28/10/2015.
  */
 angular.module('app.controllers')
-    .controller('ProjectNoteNewController',
+    .controller('ProjectFileNewController',
     ['$scope', '$routeParams', '$location', 'ProjectNote',
-        function ($scope, $routeParams, $location, ProjectNote){
-            $scope.projectNote = new ProjectNote();
+        function ($scope, $routeParams, $location, ProjectFile){
+            $scope.projectNote = new ProjectFile();
             $scope.projectNote.project_id = $routeParams.id;
 
             $scope.save = function () {

@@ -61,11 +61,9 @@ class ProjectFileController extends Controller
      */
     public function showFile($id)
     {
-
         if ($this->service->checkProjectPermissions($id) == false){
             return ['error' => 'Access Forbbiden'];
         }
-
         return response()->download($this->service->getFilePath($id));
     }
 
@@ -114,7 +112,7 @@ class ProjectFileController extends Controller
             return ['error' => 'Access Forbbiden'];
         };
 
-        return $this->repository->delete($id);
+        $this->repository->delete($id);
     }
 
 }

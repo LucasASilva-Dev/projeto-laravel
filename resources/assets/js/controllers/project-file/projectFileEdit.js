@@ -2,9 +2,9 @@
  * Created by Lucas on 28/10/2015.
  */
 angular.module('app.controllers')
-    .controller('ProjectNoteEditController',
-    ['$scope', '$location', 'ProjectNote', '$routeParams',
-        function ($scope, $location, ProjectNote, $routeParams){
+    .controller('ProjectFileEditController',
+    ['$scope', '$location', 'ProjectFile', '$routeParams',
+        function ($scope, $location, ProjectFile, $routeParams){
 
         $scope.projectNote = ProjectNote.get({
             id:$routeParams.id,

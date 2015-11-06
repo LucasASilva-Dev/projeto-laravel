@@ -92,6 +92,6 @@ class ProjectController extends Controller
             return ['error' => 'Access Forbbiden'];
         };
 
-        return $this->repository->delete($id);
+        $this->repository->delete($id);
     }
 }
