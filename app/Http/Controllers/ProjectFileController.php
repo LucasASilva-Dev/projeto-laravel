@@ -2,12 +2,9 @@
 
 namespace CodeProject\Http\Controllers;
 
-use CodeProject\Repositories\ProjectRepositories;
-use CodeProject\Services\ProjectService;
+use CodeProject\Repositories\ProjectFileRepository;
+use CodeProject\Services\ProjectFileService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
-use LucaDegasperi\OAuth2Server\Facades\Authorizer;
 
 class ProjectFileController extends Controller
 {
@@ -16,11 +13,11 @@ class ProjectFileController extends Controller
      */
     private $repository;
     /**
-     * @var ProjectService
+     * @var ProjectFileService
      */
     private $service;
 
-    public function __construct(ProjectRepositories $repository, ProjectService $service){
+    public function __construct(ProjectFileRepository $repository, ProjectFileService $service){
 
         $this->repository = $repository;
         $this->service = $service;
@@ -30,9 +27,9 @@ class ProjectFileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        return $this->repository->findWhere(['owner_id' => \Authorizer::getResourceOwnerId()]);
+        return $this->repository->findWhere(['project_id' => $id]);
     }
 
 
@@ -44,16 +41,16 @@ class ProjectFileController extends Controller
      */
     public function store(Request $request)
     {
-
         $file = $request->file('file');
         $extension = $file->getClientOriginalExtension();
+
         $data['file'] =  $file;
         $data['extension'] =  $extension;
         $data['name'] = $request->name;
         $data['project_id'] = $request->project_id;
         $data['description'] = $request->description;
 
-        $this->service->createFile($data);
+        return $this->service->createFile($data);
     }
 
     /**
@@ -62,10 +59,24 @@ class ProjectFileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function showFile($id)
+    {
+
+        if ($this->service->checkProjectPermissions($id) == false){
+            return ['error' => 'Access Forbbiden'];
+        }
+
+        return response()->download($this->service->getFilePath($id));
+    }
+
+    /**
+     * @param $id
+     * @return array|\Symfony\Component\HttpFoundation\BinaryFileResponse
+     */
     public function show($id)
     {
 
-        if ($this->checkProjectPermissions($id) == false){
+        if ($this->service->checkProjectPermissions($id) == false){
             return ['error' => 'Access Forbbiden'];
         }
 
@@ -83,7 +94,7 @@ class ProjectFileController extends Controller
     public function update(Request $request, $id)
     {
 
-        if ($this->checkProjectOwner($id) == false){
+        if ($this->service->checkProjectOwner($id) == false){
             return ['error' => 'Access Forbbiden'];
         };
 
@@ -99,34 +110,11 @@ class ProjectFileController extends Controller
     public function destroy($id)
     {
 
-        if ($this->checkProjectOwner($id) == false){
+        if ($this->service->checkProjectOwner($id) == false){
             return ['error' => 'Access Forbbiden'];
         };
 
         return $this->repository->delete($id);
     }
-
-    private function checkProjectOwner($projectId){
-
-        $userId = \Authorizer::getResourceOwnerId();
-        return $this->repository->isOwner($projectId, $userId);
-
-    }
-
-    private function checkProjectMember($projectId){
-
-        $userId = \Authorizer::getResourceOwnerId();
-        return $this->repository->hasMember($projectId, $userId);
-
-    }
-
-    private function checkProjectPermissions($projectId){
-        if( $this->checkProjectOwner($projectId) or $this->checkProjectMember($projectId)){
-            return true;
-        };
-
-        return false;
-    }
-
 
 }
