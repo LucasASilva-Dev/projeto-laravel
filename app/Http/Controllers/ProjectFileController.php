@@ -50,7 +50,7 @@ class ProjectFileController extends Controller
         $data['project_id'] = $request->project_id;
         $data['description'] = $request->description;
 
-        return $this->service->createFile($data);
+        return $this->service->create($data);
     }
 
     /**
