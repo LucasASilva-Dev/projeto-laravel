@@ -98,10 +98,10 @@
 		<script src="{{asset('build/js/controllers/project/projectRemove.js')}}"></script>
 
 		<script src="{{asset('build/js/controllers/project-note/projectNoteShow.js')}}"></script>
-		<script src="{{asset('build/js/controllers/project-note/projectNoteList.js')}}"></script>
-		<script src="{{asset('build/js/controllers/project-note/projectNoteNew.js')}}"></script>
-		<script src="{{asset('build/js/controllers/project-note/projectNoteEdit.js')}}"></script>
-		<script src="{{asset('build/js/controllers/project-note/projectNoteRemove.js')}}"></script>
+		<script src="{{asset('projectFileList.js')}}"></script>
+		<script src="{{asset('projectFileNew.js')}}"></script>
+	projectFileNew.jssset('projectFileEdit.js')}}"></script>
+projectFileEdit.jssset('build/js/controllers/project-note/projectNoteRemove.js')}}"></script>
 
 
 		<!--FILTERS-->

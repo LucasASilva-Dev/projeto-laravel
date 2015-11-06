@@ -123,6 +123,28 @@ app.config([
         .when('/project/:id/notes/:idNote/remove', {
             templateUrl: 'build/views/project-note/remove.html',
             controller: 'ProjectNoteRemoveController'
+        })
+        
+        //Rotas de ProjectsFiles
+        .when('/project/:id/files', {
+            templateUrl: 'build/views/project-file/list.html',
+            controller: 'ProjectFileListController'
+        })
+        .when('/project/:id/files/:idFile/show', {
+            templateUrl: 'build/views/project-file/show.html',
+            controller: 'ProjectFileShowController'
+        })
+        .when('/project/:id/files/new/', {
+            templateUrl: 'build/views/project-file/new.html',
+            controller: 'ProjectFileNewController'
+        })
+        .when('/project/:id/files/:idFile/edit', {
+            templateUrl: 'build/views/project-file/edit.html',
+            controller: 'ProjectFileEditController'
+        })
+        .when('/project/:id/files/:idFile/remove', {
+            templateUrl: 'build/views/project-file/remove.html',
+            controller: 'ProjectFileRemoveController'
         });
 
 
