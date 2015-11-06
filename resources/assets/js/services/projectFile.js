@@ -13,7 +13,8 @@ angular.module('app.services')
             update: {
                 method: 'PUT'
             },
-            get: {
+            download: {
+                url: appConfig.baseUrl + Url.getUrlResource(appConfig.urls.projectFile) + '/download',
                 method: 'GET'
             }
         });
