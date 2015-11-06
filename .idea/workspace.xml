@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9730f7c5-ce91-4162-a1f7-de3d2547f731" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectFileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectFileController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/ProjectFileService.php" afterPath="$PROJECT_DIR$/app/Services/ProjectFileService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Validators/ProjectFileValidator.php" afterPath="$PROJECT_DIR$/app/Validators/ProjectFileValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectNoteController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectNoteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileEdit.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileEdit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileList.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/views/project-file/new.html" afterPath="$PROJECT_DIR$/resources/assets/js/views/project-file/new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileNew.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileNew.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileRemove.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileRemove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/services/projectNote.js" afterPath="$PROJECT_DIR$/public/build/js/services/projectNote.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/services/projectNote.js" afterPath="$PROJECT_DIR$/resources/assets/js/services/projectNote.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/controllers/project-note/projectNoteEdit.js" afterPath="$PROJECT_DIR$/public/build/js/controllers/project-note/projectNoteEdit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteEdit.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteEdit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/controllers/project-note/projectNoteRemove.js" afterPath="$PROJECT_DIR$/public/build/js/controllers/project-note/projectNoteRemove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteRemove.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteRemove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/controllers/project-note/projectNoteShow.js" afterPath="$PROJECT_DIR$/public/build/js/controllers/project-note/projectNoteShow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteShow.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteShow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="projeto-laravel.iws" />
@@ -44,37 +27,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProjectFileService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/ProjectFileService.php">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5925927">
-              <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectFileValidator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Validators/ProjectFileValidator.php">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.648148">
+              <caret line="105" column="63" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectFileController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectFileController.php">
+      <file leaf-file-name="projectFileNew.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileNew.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89048475">
-              <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-              <folding>
-                <element signature="e#48#99#0#PHP" expanded="true" />
-                <element signature="e#368#543#0#PHP" expanded="false" />
-                <element signature="e#654#760#0#PHP" expanded="false" />
-                <element signature="e#931#1352#0#PHP" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/views/project-file/new.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1523046">
+              <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteNew.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/views/project-note/remove.html" />
         <option value="$PROJECT_DIR$/resources/assets/js/services/user.js" />
         <option value="$PROJECT_DIR$/app/Repositories/UserRepository.php" />
@@ -137,7 +124,6 @@
         <option value="$PROJECT_DIR$/app/Services/ProjectService.php" />
         <option value="$PROJECT_DIR$/app/Services/ProjectFileService.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectNoteController.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-note/projectNoteShow.js" />
@@ -147,10 +133,12 @@
         <option value="$PROJECT_DIR$/resources/assets/js/services/projectNote.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileEdit.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileList.js" />
-        <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileNew.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileRemove.js" />
         <option value="$PROJECT_DIR$/app/Validators/ProjectFileValidator.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectFileController.php" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileNew.js" />
+        <option value="$PROJECT_DIR$/resources/assets/js/views/project-file/new.html" />
       </list>
     </option>
   </component>
@@ -347,7 +335,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project-note" />
+              <option name="myItemId" value="project-file" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,7 +561,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="projectFileCon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectFileController.php&#10;projectFileVa&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Validators/ProjectFileValidator.php&#10;Pro&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Services/ProjectFileService.php&#10;ProjectFileSer&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Services/ProjectFileService.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/app.js&#10;project&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectFileController.php&#10;projectser&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Services/ProjectService.php&#10;gu&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;bow&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/bower.json&#10;projecttr&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Transformers/ProjectTransformer.php&#10;ClientRe&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Repositories/ClientRepositoryEloquent.php&#10;projectN&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project/projectNew.js&#10;new&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project/new.html&#10;app.bla&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;app.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/app.js&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;User&#9;null&#9;null&#10;login.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/user.js&#10;ProjectNoteCon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;list&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project-note/list.html&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;PRojec&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteRemove.js&#10;projectnotecon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;proje&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteNew.js&#10;client.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;clientLi&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/client/clientList.js&#10;gul&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;client&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;g&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/.env&#10;rou&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="pro&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-file/projectFileNew.js&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;project&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-file/projectFileNew.js&#10;projectFileCon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectFileController.php&#10;projectFileVa&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Validators/ProjectFileValidator.php&#10;Pro&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Services/ProjectFileService.php&#10;ProjectFileSer&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Services/ProjectFileService.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php&#10;projectser&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Services/ProjectService.php&#10;gu&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;bow&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/bower.json&#10;projecttr&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Transformers/ProjectTransformer.php&#10;ClientRe&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Repositories/ClientRepositoryEloquent.php&#10;projectN&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project/projectNew.js&#10;new&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project/new.html&#10;app.bla&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;app.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/app.js&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;User&#9;null&#9;null&#10;login.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/login.js&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/user.js&#10;ProjectNoteCon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;list&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/views/project-note/list.html&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/views/app.blade.php&#10;PRojec&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteRemove.js&#10;projectnotecon&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/Controllers/ProjectNoteController.php&#10;proje&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/project-note/projectNoteNew.js&#10;client.js&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;clientLi&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/controllers/client/clientList.js&#10;gul&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;client&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/resources/assets/js/services/client.js&#10;g&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/gulpfile.js&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/.env&#10;rou&#9;FILE&#9;file://C:/xampp/htdocs/projetos/laravel/projeto-laravel/app/Http/routes.php" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -696,7 +684,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446835317361</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Consideracoes finais de refatoracao na api e correção das exclusões.">
+      <created>1446845595066</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1446845595066</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -756,7 +750,8 @@
     <MESSAGE value="Configurando rotas de project file" />
     <MESSAGE value="Configurando rotas, repository e transformer" />
     <MESSAGE value="Configurando controllers e services de project e projectfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configurando controllers e services de project e projectfile" />
+    <MESSAGE value="Consideracoes finais de refatoracao na api e correção das exclusões." />
+    <option name="LAST_COMMIT_MESSAGE" value="Consideracoes finais de refatoracao na api e correção das exclusões." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -898,14 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/views/project-file/new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12926391">
-          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Entities/ProjectFile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1011,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64528304">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7755835">
@@ -1073,14 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileNew.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21575342">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1849315">
@@ -1117,14 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2908438">
           <caret line="9" column="66" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5068493">
-          <caret line="124" column="53" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1179,6 +1142,38 @@
             <element signature="e#654#760#0#PHP" expanded="false" />
             <element signature="e#931#1352#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="61" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.648148">
+          <caret line="105" column="63" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileNew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/views/project-file/new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1523046">
+          <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
