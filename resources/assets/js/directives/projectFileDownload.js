@@ -4,7 +4,6 @@
 angular.module('app.directives')
     .service('projectFileDownload',
     ['appConfig', 'ProjectFile', function(appConfig, ProjectFile){
-
         return {
             restrict: 'E',
             templateUrl: appConfig.baseUrl + '/build/views/templates/projectFileDownload.html',
