@@ -2,7 +2,7 @@
  * Created by Lucas on 06/11/2015.
  */
 angular.module('app.directives')
-    .service('projectFileDownload',
+    .directive('projectFileDownload',
     ['appConfig', 'ProjectFile', function(appConfig, ProjectFile){
         return {
             restrict: 'E',
@@ -10,8 +10,13 @@ angular.module('app.directives')
             link: function (scope, element, attr) {
 
             },
-            controller: ['$scope', '$attrs', function ($scope, $attrs) {
-
+            controller: ['$scope', '$element', '$attrs',
+                function ($scope, $element, $attrs) {
+                $scope.downloadFile = function () {
+                    var anchor = $element.children()[0];
+                    $(anchor).addClass('disabled');
+                    $(anchor).text('Loading...');
+                };
             }]
         };
     }]);
