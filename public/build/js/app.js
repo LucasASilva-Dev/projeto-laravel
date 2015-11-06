@@ -20,6 +20,9 @@ app.provider('appConfig', function () {
               {value: 3, label: 'Concluido'}
           ]
       },
+      urls: {
+        projectFile: '/project/{{id}}/file/{{idFile}}'
+      },
       utils: {
           transformResponse : function (data, headers) {
               var headersGetter = headers();

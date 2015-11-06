@@ -5,7 +5,7 @@
                 <div class="panel-heading">Cadastro de arquivos de Project</div>
                 <div class="panel-body">
 
-                    <form name="form" class="form-horizontal" role="form" ng-submit="save()">
+                    <form file="form" class="form-horizontal" role="form" ng-submit="save()">
 
                         <div class="form-group" ng-class="{'has-error': !form.name.$valid && form.name.$touched}">
 
@@ -39,8 +39,8 @@
                             <label class="col-md-4 control-label">Arquivo:</label>
 
                             <div class="col-md-6">
-                                <div class="btn btn-info" ngf-select ng-model="projectFile.file" name="file">Select</div>
-                                <!--<<input class="form-control" type="file" ngf-select ng-model="projectFile.file" name="file" />-->
+                                <div class="btn btn-info" ngf-select ng-model="projectFile.file" file="file">Select</div>
+                                <!--<<input class="form-control" type="file" ngf-select ng-model="projectFile.file" file="file" />-->
                                 <div ng-messages="form.file.$error" class="help-block" ng-show="form.file.$touched">
                                     <div ng-message="required">Campo Obrigatório</div>
                                 </div>
