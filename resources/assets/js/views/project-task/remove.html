@@ -6,8 +6,10 @@
                 <div class="panel-body">
                     <p>Deseja excluir realmente esse nota de projeto?</p>
                     <ul>
-                        <li><strong>Title: </strong> {{ projectNote.title }}</li>
-                        <li><strong>Note: </strong> {{ projectNote.note }}</li>
+                        <li><strong>Name: </strong> {{ projectTask.name }}</li>
+                        <li><strong>Start Date: </strong> {{ projectTask.start_date | dateBr }}</li>
+                        <li><strong>Due Date: </strong> {{ projectTask.due_date | dateBr}}</li>
+                        <li><strong>Status: </strong> {{ projectTask.status}}</li>
                     </ul>
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-4">

@@ -2,21 +2,20 @@
  * Created by Lucas on 28/10/2015.
  */
 angular.module('app.controllers')
-    .controller('ProjectFileRemoveController',
-    ['$scope', '$location', 'ProjectFile', '$routeParams',
-        function ($scope, $location, ProjectFile, $routeParams){
+    .controller('ProjectTaskRemoveController',
+    ['$scope', '$location', 'ProjectTask', '$routeParams', function ($scope, $location, ProjectTask, $routeParams){
 
-            $scope.projectFile = ProjectFile.get({
+            $scope.projectTask = ProjectTask.get({
                 id: $routeParams.id,
-                idFile: $routeParams.idFile
+                idTask: $routeParams.idTask
             });
 
             $scope.remove = function(){
-                $scope.projectFile.$delete({
+                $scope.projectTask.$delete({
                         id:$routeParams.id,
-                        idFile:  $scope.projectFile.id
+                        idTask:  $scope.projectTask.id
                 }).then(function(){
-                    $location.path('/project/'+$routeParams.id+'/files');
+                    $location.path('/project/'+$routeParams.id+'/tasks');
                 });
             }
 
