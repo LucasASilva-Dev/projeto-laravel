@@ -95,10 +95,13 @@ class ProjectFileService
     }
 
     public function delete($id){
+
         $projectFile = $this->repository->skipPresenter()->find($id);
 
         if($this->storage->exists($projectFile->getFileName())){
+
             $this->storage->delete($projectFile->getFileName());
+
             $projectFile->delete();
         }
 
