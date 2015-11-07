@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9730f7c5-ce91-4162-a1f7-de3d2547f731" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/ProjectFileService.php" afterPath="$PROJECT_DIR$/app/Services/ProjectFileService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/views/project-file/new.html" afterPath="$PROJECT_DIR$/public/build/views/project-file/new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/views/project-file/new.html" afterPath="$PROJECT_DIR$/resources/assets/js/views/project-file/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/controllers/project-file/projectFileRemove.js" afterPath="$PROJECT_DIR$/public/build/js/controllers/project-file/projectFileRemove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileRemove.js" afterPath="$PROJECT_DIR$/resources/assets/js/controllers/project-file/projectFileRemove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/views/project-file/remove.html" afterPath="$PROJECT_DIR$/public/build/views/project-file/remove.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/views/project-file/remove.html" afterPath="$PROJECT_DIR$/resources/assets/js/views/project-file/remove.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="projeto-laravel.iws" />
@@ -538,7 +531,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446860136067</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Removendo project file">
+      <created>1446861699068</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1446861699068</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -589,7 +588,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ProjectNote finalizado, falta apenas corrigir o response ao excluir." />
     <MESSAGE value="Rota com token e cookie finalizado. Rotas de project finalizadas." />
     <MESSAGE value="Terminando o cadastro de project" />
     <MESSAGE value="Configurando datepicker" />
@@ -614,7 +612,8 @@
     <MESSAGE value="Trabalhando com eventos" />
     <MESSAGE value="Editando project file" />
     <MESSAGE value="Adicionando download de arquivo na edição de file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando download de arquivo na edição de file" />
+    <MESSAGE value="Removendo project file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removendo project file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
