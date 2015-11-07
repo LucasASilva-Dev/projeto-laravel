@@ -54,10 +54,6 @@ class ProjectController extends Controller
     public function show($id)
     {
 
-        if ($this->service->checkProjectPermissions($id) == false){
-            return ['error' => 'Access Forbbiden'];
-        }
-
         return $this->repository->find($id);
     }
 
@@ -72,10 +68,6 @@ class ProjectController extends Controller
     public function update(Request $request, $id)
     {
 
-        if ($this->service->checkProjectOwner($id) == false){
-            return ['error' => 'Access Forbbiden'];
-        };
-
        return $this->service->update($request->all(), $id);
     }
 
@@ -88,9 +80,6 @@ class ProjectController extends Controller
     public function destroy($id)
     {
 
-        if ($this->service->checkProjectOwner($id) == false){
-            return ['error' => 'Access Forbbiden'];
-        };
 
         $this->repository->delete($id);
     }

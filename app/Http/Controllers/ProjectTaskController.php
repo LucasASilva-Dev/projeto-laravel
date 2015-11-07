@@ -68,10 +68,9 @@ class ProjectTaskController extends Controller
     {
 
         $data = $request->all();
-
         $data['project_id'] = $id;
 
-       return $this->service->update($request->all(), $idTask);
+       return $this->service->update($data, $idTask);
     }
 
     /**
@@ -85,5 +84,4 @@ class ProjectTaskController extends Controller
 
         $this->repository->delete($idTask);
     }
-
 }

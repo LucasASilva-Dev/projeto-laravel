@@ -39,7 +39,7 @@ class ProjectFileController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
         $file = $request->file('file');
         $extension = $file->getClientOriginalExtension();
@@ -47,7 +47,7 @@ class ProjectFileController extends Controller
         $data['file'] =  $file;
         $data['extension'] =  $extension;
         $data['name'] = $request->name;
-        $data['project_id'] = $request->project_id;
+        $data['project_id'] = $id;
         $data['description'] = $request->description;
 
         return $this->service->create($data);
@@ -59,20 +59,16 @@ class ProjectFileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showFile($id)
+    public function showFile($id,$idFile)
     {
-        if ($this->service->checkProjectPermissions($id) == false){
-            return ['error' => 'Access Forbbiden'];
-        }
-
-        $filePath = $this->service->getFilePath($id);
+        $filePath = $this->service->getFilePath($idFile);
         $fileContent = file_get_contents($filePath);
         $file64 = base64_encode($fileContent);
 
         return [
             'file' => $file64,
             'size' => filesize($filePath),
-            'name' => $this->service->getFileName($id)
+            'name' => $this->service->getFileName($idFile)
         ];
     }
 
@@ -80,14 +76,10 @@ class ProjectFileController extends Controller
      * @param $id
      * @return array|\Symfony\Component\HttpFoundation\BinaryFileResponse
      */
-    public function show($id)
+    public function show($id,$idFile)
     {
 
-        if ($this->service->checkProjectPermissions($id) == false){
-            return ['error' => 'Access Forbbiden'];
-        }
-
-        return $this->repository->find($id);
+        return $this->repository->find($idFile);
     }
 
 
@@ -98,14 +90,12 @@ class ProjectFileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id,  $idFile)
     {
+        $data = $request->all();
+        $data['project_id'] = $id;
 
-        if ($this->service->checkProjectOwner($id) == false){
-            return ['error' => 'Access Forbbiden'];
-        };
-
-       return $this->service->update($request->all(), $id);
+       return $this->service->update($data, $idFile);
     }
 
     /**
@@ -116,10 +106,6 @@ class ProjectFileController extends Controller
      */
     public function destroy($id)
     {
-
-        if ($this->service->checkProjectOwner($id) == false){
-            return ['error' => 'Access Forbbiden'];
-        };
 
         $this->repository->delete($id);
     }
