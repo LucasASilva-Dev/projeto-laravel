@@ -38,8 +38,8 @@
       <file leaf-file-name="projectFileDownload.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/directives/projectFileDownload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7705479">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.7089041">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -586,7 +586,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446854222774</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fazendo download do arquivo">
+      <created>1446854846786</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1446854846786</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -657,7 +663,8 @@
     <MESSAGE value="Desabilitando link de download e corrigindo a directive" />
     <MESSAGE value="Fazendo primeira requisição de file (all function)" />
     <MESSAGE value="Forcando download de file em base64" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forcando download de file em base64" />
+    <MESSAGE value="Fazendo download do arquivo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fazendo download do arquivo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1082,8 +1089,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/directives/projectFileDownload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7705479">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.7089041">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
           <folding />
         </state>
       </provider>
