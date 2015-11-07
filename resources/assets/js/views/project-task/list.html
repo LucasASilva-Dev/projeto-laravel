@@ -2,30 +2,28 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Listagem de Projetos</div>
+                <div class="panel-heading">Listagem de Tarefas de Project</div>
                 <div class="panel-body">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Client</th>
-                                <th>Progress</th>
+                                <th>Start Date</th>
                                 <th>Due Date</th>
                                 <th>Ação</th>
                             </tr>
 
                         </thead>
                         <tbody>
-                            <tr ng-repeat="o in projects">
+                            <tr ng-repeat="o in projectTask">
                                 <td>{{o.name}}</td>
-                                <td>{{o.client.data.name}}</td>
-                                <td>{{o.progress}}</td>
+                                <td>{{o.start_date | dateBr}}</td>
                                 <td>{{o.due_date | dateBr}}</td>
                                 <td>
-                                    <a ng-href="#project/{{o.id}}/edit" class="btn btn-info btn-sm">
+                                    <a ng-href="#project/{{o.project_id}}/notes/{{o.id}}/edit" class="btn btn-info btn-sm">
                                         Editar
                                     </a>
-                                    <a ng-href="#project/{{o.id}}/remove" class="btn btn-danger btn-sm">
+                                    <a ng-href="#project/{{o.project_id}}/notes/{{o.id}}/remove" class="btn btn-danger btn-sm">
                                         Excluir
                                     </a>
                                 </td>
