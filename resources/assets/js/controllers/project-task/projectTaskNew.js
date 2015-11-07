@@ -34,7 +34,8 @@ angular.module('app.controllers')
             $scope.save = function () {
                 if($scope.form.$valid){
                     $scope.projectTask.$save({
-                        id: $routeParams.id
+                        id: $routeParams.id,
+                        idTask: $routeParams.idTask
                     }).then( function(){
                         $location.path('/project/'+$routeParams.id+'/tasks');
                     })

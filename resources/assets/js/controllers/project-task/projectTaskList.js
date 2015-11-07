@@ -6,25 +6,24 @@ angular.module('app.controllers')
         '$scope', '$routeParams', 'appConfig', 'ProjectTask',
         function ($scope, $routeParams, appConfig, ProjectTask){
 
-            $scope.projectTask = new ProjectTask();
+            $scope.projectTasks = new ProjectTask();
 
             $scope.save = function () {
-                    if($scope.form.valid){
-                        $scope.projectTask.status = appConfig.projectTask.status[0].value;
-                        $scope.projectTask.$save({
-                            id: $routeParams.id
-                        }).then(function () {
-                            $scope.loadTask();
-                        })
-                    }
-                };
+                if($scope.form.valid){
+                    $scope.projectTasks.status = appConfig.projectTask.status[0].value;
+                    $scope.projectTasks.$save({id: $routeParams.id}).then (function () {
+                        $scope.projectTasks = new ProjectTask();
+                        $scope.loadTask();
+                    })
+                }
+            };
 
-                $scope.loadTask = function () {
-                    $scope.projectTask = ProjectTask.query({
-                        id: $routeParams.id,
-                        orderBy: 'id',
-                        sortedBy: 'desc'
-                    });
+            $scope.loadTask = function () {
+                $scope.projectTasks = ProjectTask.query({
+                    id: $routeParams.id,
+                    orderBy: 'id',
+                    sortedBy: 'desc'
+                });
             };
 
             $scope.loadTask();

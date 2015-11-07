@@ -39,7 +39,7 @@ class ProjectTaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(Request $request, $id, $idTask)
     {
         $data = $request->all();
         $data['project_id'] = $id;

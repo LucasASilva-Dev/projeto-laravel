@@ -2,24 +2,50 @@
  * Created by Lucas on 28/10/2015.
  */
 angular.module('app.controllers')
-    .controller('ProjectFileEditController',
-    ['$scope', '$location', 'ProjectFile', '$routeParams',
-        function ($scope, $location, ProjectFile, $routeParams){
+    .controller('ProjectTaskEditController',
+    ['$scope', '$routeParams', '$location', "$cookies",  'ProjectTask', 'appConfig',
+        function ($scope, $routeParams, $location, $cookies, ProjectTask,  appConfig){
 
-        $scope.projectFile = ProjectFile.get({
-            id: $routeParams.id,
-            idFile: $routeParams.idFile
-        });
+            ProjectTask.get({
+                id: $routeParams.id,
+                idTask: $routeParams.idTask
+            }, function (data) {
+                $scope.projectTask = data;
+            });
 
-        $scope.save = function () {
-            if($scope.form.$valid){
-                ProjectFile.update({
-                    id: $routeParams.id,
-                    idFile: $scope.projectFile.id
-                }, $scope.projectFile, function(){
-                    $location.path('/project/'+$routeParams.id+'/files');
-                });
-            }
-        }
+            $scope.status = appConfig.projectTask.status;
 
-    }]);
+            $scope.due_date = {
+                status: {
+                    opened: false
+                }
+            };
+
+            $scope.start_date = {
+                status: {
+                    opened: false
+                }
+            };
+
+            $scope.openDue = function ($event) {
+                $scope.due_date.status.opened = true;
+            };
+
+            $scope.openStart = function ($event) {
+                $scope.start_date.status.opened = true;
+            };
+
+
+
+            $scope.save = function () {
+                if($scope.form.$valid){
+                    ProjectTask.update({
+                        id: $scope.projectTask.project_id,
+                        idTask: $routeParams.idTask
+                    }, $scope.projectTask, function(){
+                        $location.path('/project/'+$routeParams.id+'/tasks');
+                    });
+                }
+            };
+
+        }]);
