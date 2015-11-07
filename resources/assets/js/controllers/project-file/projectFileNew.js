@@ -11,7 +11,7 @@ angular.module('app.controllers')
                     var url = appConfig.baseUrl +
                         Url.getUrlFromUrlSymbol(appConfig.urls.projectFile, {
                             id: $routeParams.id,
-                            ifFile: ''
+                            idFile: ''
                         });
                     Upload.upload({
                         url: url,

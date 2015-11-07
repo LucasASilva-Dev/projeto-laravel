@@ -59,7 +59,7 @@ class ProjectFileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showFile($id,$idFile)
+    public function showFile($id, $idFile)
     {
         $filePath = $this->service->getFilePath($idFile);
         $fileContent = file_get_contents($filePath);
@@ -104,10 +104,9 @@ class ProjectFileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id,$idFile)
     {
-
-        $this->repository->delete($id);
+        $this->repository->delete($idFile);
     }
 
 }
