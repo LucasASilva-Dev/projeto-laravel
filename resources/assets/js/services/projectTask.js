@@ -2,7 +2,8 @@
  * Created by Lucas on 30/10/2015.
  */
 angular.module('app.services')
-.service('ProjectTask',['$resource', '$filter', '$httpParamSerializer', 'appConfig', function($resource, $filter, $httpParamSerializer, appConfig){
+.service('ProjectTask',['$resource', '$filter', '$httpParamSerializer', 'appConfig',
+        function($resource, $filter, $httpParamSerializer, appConfig){
 
         function transformData(data){
             var o = angular.copy(data);
