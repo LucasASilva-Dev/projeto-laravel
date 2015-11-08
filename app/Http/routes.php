@@ -26,7 +26,7 @@ Route::group(['middleware' => 'oauth'], function(){
 
     Route::resource('project', 'ProjectController', ['except' => ['create', 'edit']]);
 
-    Route::resource('project.members', 'ProjectMemberController', ['except' => ['create', 'edit', 'update']]);
+    Route::resource('project.member', 'ProjectMemberController', ['except' => ['create', 'edit', 'update']]);
 
     Route::group(['middleware' => 'check.project.permission', 'prefix'=>'project'], function(){
 

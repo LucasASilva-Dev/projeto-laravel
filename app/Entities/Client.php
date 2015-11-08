@@ -14,4 +14,10 @@ class Client extends Model
         'address',
         'obs'
     ];
+
+    public function project(){
+        //One to Many
+        return $this->belongsTo(Project::class);
+
+    }
 }

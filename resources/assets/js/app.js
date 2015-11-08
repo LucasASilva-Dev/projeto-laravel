@@ -173,6 +173,16 @@ app.config([
         .when('/project/:id/task/:idTask/remove', {
             templateUrl: 'build/views/project-task/remove.html',
             controller: 'ProjectTaskRemoveController'
+        })
+
+        //Rotas de ProjectsMember
+        .when('/project/:id/members', {
+            templateUrl: 'build/views/project-member/list.html',
+            controller: 'ProjectMemberListController'
+        })
+        .when('/project/:id/member/:idProjectMember/remove', {
+            templateUrl: 'build/views/project-member/remove.html',
+            controller: 'ProjectMemberRemoveController'
         });
 
 

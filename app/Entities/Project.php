@@ -21,7 +21,8 @@ class Project extends Model implements Transformable
     ];
 
     public function client(){
-     return new Client();
+        //One to Many
+        return new Client();
     }
 
     public function notes(){
