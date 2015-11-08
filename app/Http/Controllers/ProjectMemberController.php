@@ -6,7 +6,7 @@ use CodeProject\Repositories\ProjectMemberRepository;
 use CodeProject\Services\ProjectMemberService;
 use Illuminate\Http\Request;
 
-class ProjectController extends Controller
+class ProjectMemberController extends Controller
 {
     /*
      * @var ProjectRepository

@@ -19,10 +19,10 @@ class MemberTransformer extends TransformerAbstract
      * @param User $o
      * @return array
      */
-    public function transform(User $o){
+    public function transform(User $member){
         return [
-            'member_id' => (int)$o->id,
-            'name' => $o->name,
+            'member_id' => $member->id,
+            'name' => $member->name,
         ];
 
     }
