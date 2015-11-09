@@ -12,7 +12,7 @@ angular.module('app.services')
                 return config;
             },
             responseError: function(rejection) {
-                var deferred = $q.dever();
+                var deferred = $q.defer();
 
 
                 if (400 === rejection.status

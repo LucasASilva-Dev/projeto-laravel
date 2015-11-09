@@ -30,8 +30,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5068493">
-              <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.59931505">
+              <caret line="233" column="41" selection-start-line="233" selection-start-column="41" selection-end-line="233" selection-end-column="41" />
               <folding>
                 <element signature="e#7535#7700#0" expanded="false" />
               </folding>
@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -673,7 +673,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447089619596</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Usando $q para protelar resultado da requisição.">
+      <created>1447091544374</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1447091544374</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -747,7 +753,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fazendo primeira requisição de file (all function)" />
     <MESSAGE value="Forcando download de file em base64" />
     <MESSAGE value="Fazendo download do arquivo" />
     <MESSAGE value="Criando download automatico" />
@@ -772,7 +777,8 @@
     <MESSAGE value="Criando logout" />
     <MESSAGE value="Criando oauthFixInterceptor" />
     <MESSAGE value="Criando oauthFixInterceptor (fix)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando oauthFixInterceptor (fix)" />
+    <MESSAGE value="Usando $q para protelar resultado da requisição." />
+    <option name="LAST_COMMIT_MESSAGE" value="Usando $q para protelar resultado da requisição." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1162,15 +1168,15 @@
     <entry file="file://$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5068493">
-          <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.59931505">
+          <caret line="233" column="41" selection-start-line="233" selection-start-column="41" selection-end-line="233" selection-end-column="41" />
           <folding>
             <element signature="e#7535#7700#0" expanded="false" />
           </folding>
