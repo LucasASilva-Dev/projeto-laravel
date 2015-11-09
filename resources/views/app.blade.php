@@ -127,6 +127,7 @@
 
 		<!--SERVICES-->
 		<script src="{{asset('build/js/services/url.js')}}"></script>
+		<script src="{{asset('build/js/services/oauthFixInterceptor.js')}}"></script>
 		<script src="{{asset('build/js/services/client.js')}}"></script>
 		<script src="{{asset('build/js/services/project.js')}}"></script>
 		<script src="{{asset('build/js/services/projectNote.js')}}"></script>
@@ -134,7 +135,6 @@
 		<script src="{{asset('build/js/services/projectFile.js')}}"></script>
 		<script src="{{asset('build/js/services/projectMember.js')}}"></script>
 		<script src="{{asset('build/js/services/user.js')}}"></script>
-		<script src="{{asset('build/js/services/oAuthFixInterceptor.js')}}"></script>
 
 	@else
 		<script src="{{elixir('js/all.js')}}"></script>

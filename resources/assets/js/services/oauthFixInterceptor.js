@@ -2,7 +2,7 @@
  * Created by Lucas on 09/11/2015.
  */
 angular.module('app.services')
-    .service('oAuthFixInterceptor',['$q','$routeScope', 'OAuthToken', function ($q, $rootScope, OAuthToken) {
+    .service('oauthFixInterceptor',['$q','$rootScope', 'OAuthToken', function ($q, $rootScope, OAuthToken) {
         return {
             request: function(config) {
                 if (OAuthToken.getAuthorizationHeader()) {
