@@ -16,10 +16,12 @@ angular.module('app.controllers')
             };
 
             $scope.$on('event:auth-loginConfirmed', function () {
+                $routeScope.loginModalOpened = false;
                 $modalInstance.close();
             });
 
             $scope.$on('$routeChangeStart', function () {
+                $routeScope.loginModalOpened = false;
                 $modalInstance.dismiss('cancel');
             });
 

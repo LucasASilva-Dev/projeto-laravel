@@ -120,6 +120,7 @@
 
 		<!--DIRECTIVES-->
 		<script src="{{asset('build/js/directives/projectFileDownload.js')}}"></script>
+		<script src="{{asset('build/js/directives/loginForm.js')}}"></script>
 
 
 		<!--FILTERS-->
