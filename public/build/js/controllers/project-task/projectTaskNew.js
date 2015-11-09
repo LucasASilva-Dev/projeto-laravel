@@ -7,7 +7,6 @@ angular.module('app.controllers')
         function ($scope, $routeParams, $location, ProjectTask, appConfig){
 
             $scope.projectTask = new ProjectTask();
-            $scope.projectTask.project_id = $routeParams.id;
 
             $scope.status = appConfig.projectTask.status;
 

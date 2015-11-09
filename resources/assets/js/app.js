@@ -204,7 +204,7 @@ app.config([
 }]);
 
 app.run(['$rootScope', '$location', '$window', 'OAuth', function($rootScope, $location, $window, OAuth) {
-    
+
     $rootScope.$on('$routeChangeStart', function (event,next,current) {
         if(next.$$route.originalPath != '/login'){
             if(!OAuth.isAuthenticated()){
