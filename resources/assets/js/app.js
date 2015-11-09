@@ -77,6 +77,15 @@ app.config([
 
         })
 
+        .when('/logout', {
+            resolve: {
+                logout: ['$location','OAuthToken', function ($location,OAuthToken) {
+
+                    OAuthToken.removeToken();
+                    $location.path('/login');
+                }]
+            }
+        })
         //Rotas de Clients
         .when('/clients', {
             templateUrl: 'build/views/client/list.html',
