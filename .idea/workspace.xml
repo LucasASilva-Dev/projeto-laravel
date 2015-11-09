@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9730f7c5-ce91-4162-a1f7-de3d2547f731" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/app.js" afterPath="$PROJECT_DIR$/public/build/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/app.js" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js" afterPath="$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,53 +27,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="projectNew.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project/projectNew.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/views/project-task/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="9" column="103" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projectTaskNew.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project-task/projectTaskNew.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projectTaskList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/controllers/project-task/projectTaskList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="218" column="14" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.5068493">
+              <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
               <folding>
-                <element signature="e#7519#7684#0" expanded="false" />
+                <element signature="e#7535#7700#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -88,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oauthFixInterceptor.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="oauthFixInterceptor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12328767">
-              <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -172,9 +133,9 @@
         <option value="$PROJECT_DIR$/resources/assets/js/views/project-task/list.html" />
         <option value="$PROJECT_DIR$/resources/assets/js/controllers/project-task/projectTaskList.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/services/oAuthFixInterceptor.js" />
-        <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js" />
+        <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
       </list>
     </option>
   </component>
@@ -706,7 +667,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447086335762</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Criando oauthFixInterceptor (fix)">
+      <created>1447089619596</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1447089619596</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -780,7 +747,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Desabilitando link de download e corrigindo a directive" />
     <MESSAGE value="Fazendo primeira requisição de file (all function)" />
     <MESSAGE value="Forcando download de file em base64" />
     <MESSAGE value="Fazendo download do arquivo" />
@@ -805,7 +771,8 @@
     <MESSAGE value="Refatorações diversas." />
     <MESSAGE value="Criando logout" />
     <MESSAGE value="Criando oauthFixInterceptor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando oauthFixInterceptor" />
+    <MESSAGE value="Criando oauthFixInterceptor (fix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando oauthFixInterceptor (fix)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1192,21 +1159,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="218" column="14" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="14" />
-          <folding>
-            <element signature="e#7519#7684#0" expanded="false" />
-          </folding>
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/services/oauthFixInterceptor.js">
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12328767">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
-          <folding />
+        <state vertical-scroll-proportion="0.5068493">
+          <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
+          <folding>
+            <element signature="e#7535#7700#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
