@@ -38,7 +38,7 @@ app.provider('appConfig', function () {
                   headersGetter['content-type'] == 'text/json'){
                   var dataJson = JSON.parse(data);
 
-                  if(dataJson.hasOwnProperty('data')){
+                  if(dataJson.hasOwnProperty('data') && Object.keys(data) == 1 ){
                       dataJson = dataJson.data;
                   }
 
