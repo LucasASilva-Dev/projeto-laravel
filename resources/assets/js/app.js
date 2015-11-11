@@ -235,14 +235,15 @@ app.run(['$rootScope', '$location', '$http', '$modal', 'httpBuffer', 'OAuth', fu
         // Refresh token when a `access_denied` error occurs.
         if ('access_denied' === data.rejection.data.error) {
             httpBuffer.append(data.rejection.config, data.deferred);
-            if(!$routeScope.loginModalOpened) {
+            if(!$rootScope.loginModalOpened) {
 
                 var modalInstance = $modal.open({
                     templateUrl: 'build/views/templates/loginModal.html',
                     controller: 'LoginModalController'
                 });
-                $routeScope.loginModalOpened = true;
+                $rootScope.loginModalOpened = true;
             }
+            return;
         }
 
         // Redirect to `/login` with the `error_reason`.
