@@ -25,7 +25,7 @@
 </head>
 <body>
 
-    <div ng-include="'build/views/templates/menu.html'"></div>
+    <load-template url="build/views/templates/menu.html"></load-template>
 
 	<div ng-view></div>
 
@@ -86,7 +86,8 @@
 
 		<!--DIRECTIVES-->
 		<script src="{{asset('build/js/directives/projectFileDownload.js')}}"></script>
-		<script src="{{asset('build/js/directives/loginForm.js')}}"></script>
+        <script src="{{asset('build/js/directives/loginForm.js')}}"></script>
+        <script src="{{asset('build/js/directives/loadTemplate.js')}}"></script>
 
 
 		<!--FILTERS-->
