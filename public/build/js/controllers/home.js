@@ -5,8 +5,5 @@ angular.module('app.controllers')
     .controller('HomeController', ['$scope', '$cookies', function ($scope, $cookies){
 
         //$cookies.get('nomedoCookie);
-
         console.log($cookies.getObject('user').email);
-        console.log($cookies.getObject('user').id);
-
     }]);
