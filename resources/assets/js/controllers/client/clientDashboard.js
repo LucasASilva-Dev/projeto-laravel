@@ -5,14 +5,14 @@ angular.module('app.controllers')
     .controller('ClientDashboardController',
     ['$scope', '$location', 'Client', '$routeParams', function ($scope, $location, Client, $routeParams){
 
-        $scope.client = Client.get({id:$routeParams.id});
+        $scope.clients = Client.query({
+            orderBy: 'created_at',
+            sortedBy: 'desc',
+            limit: 8
+        }, function (response) {
+            $scope.clients = response.data;
+        });
 
-        $scope.save = function () {
-            if($scope.form.$valid){
-                Client.update({id: $scope.client.id}, $scope.client, function(){
-                    $location.path('/clients');
-                });
-            }
-        }
+
 
     }]);
