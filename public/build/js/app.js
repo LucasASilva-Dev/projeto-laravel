@@ -92,6 +92,11 @@ app.config([
             }
         })
         //Rotas de Clients
+        .when('/clients/dashboard', {
+            templateUrl: 'build/views/client/dashboard.html',
+            controller: 'ClientDashboardController',
+            title: 'Clients'
+        })
         .when('/clients', {
             templateUrl: 'build/views/client/list.html',
             controller: 'ClientListController',
