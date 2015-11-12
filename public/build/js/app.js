@@ -38,8 +38,7 @@ app.provider('appConfig', function () {
               if(headersGetter['content-type'] == 'application/json' ||
                   headersGetter['content-type'] == 'text/json'){
                   var dataJson = JSON.parse(data);
-
-                  if(dataJson.hasOwnProperty('data') && Object.keys(data) == 1 ){
+                  if(dataJson.hasOwnProperty('data') && Object.keys(dataJson).length == 1 ){
                       dataJson = dataJson.data;
                   }
 
@@ -58,8 +57,12 @@ app.provider('appConfig', function () {
 });
 
 app.config([
-    '$routeProvider', '$httpProvider', 'OAuthProvider', 'OAuthTokenProvider', 'appConfigProvider',
-    function ($routeProvider, $httpProvider, OAuthProvider, OAuthTokenProvider, appConfigProvider) {
+    '$routeProvider', '$httpProvider', 'OAuthProvider', 'OAuthTokenProvider', 'appConfigProvider', '$navbarProvider',
+    function ($routeProvider, $httpProvider, OAuthProvider, OAuthTokenProvider, appConfigProvider, $navbarProvider) {
+
+        angular.extend($navbarProvider.defaults, {
+            activeClass: 'actived'
+        });
 
         //$httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
         //$httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
