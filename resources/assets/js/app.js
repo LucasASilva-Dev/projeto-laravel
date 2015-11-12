@@ -5,7 +5,7 @@ var app = angular.module('app',[
     'ngRoute','angular-oauth2','app.controllers','app.services','app.filters','app.directives',
     'ui.bootstrap.typeahead','ui.bootstrap.tpls','ui.bootstrap.modal',
     'ui.bootstrap.datepicker','ngFileUpload','http-auth-interceptor', 'angularUtils.directives.dirPagination',
-    'mgcrea.ngStrap.navbar','ui.bootstrap.dropdown'
+    'ui.bootstrap.dropdown'
 ]);
 
 angular.module('app.controllers',['ngMessages','angular-oauth2']);
@@ -57,12 +57,8 @@ app.provider('appConfig', function () {
 });
 
 app.config([
-    '$routeProvider', '$httpProvider', 'OAuthProvider', 'OAuthTokenProvider', 'appConfigProvider', '$navbarProvider',
-    function ($routeProvider, $httpProvider, OAuthProvider, OAuthTokenProvider, appConfigProvider, $navbarProvider) {
-
-        angular.extend($navbarProvider.defaults, {
-            activeClass: 'actived'
-        });
+    '$routeProvider', '$httpProvider', 'OAuthProvider', 'OAuthTokenProvider', 'appConfigProvider',
+    function ($routeProvider, $httpProvider, OAuthProvider, OAuthTokenProvider, appConfigProvider) {
 
         //$httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
         //$httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
