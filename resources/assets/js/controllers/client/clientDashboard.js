@@ -5,6 +5,8 @@ angular.module('app.controllers')
     .controller('ClientDashboardController',
     ['$scope', '$location', 'Client', '$routeParams', function ($scope, $location, Client, $routeParams){
 
+        $scope.client = {};
+
         $scope.clients = Client.query({
             orderBy: 'created_at',
             sortedBy: 'desc',
@@ -13,6 +15,8 @@ angular.module('app.controllers')
             $scope.clients = response.data;
         });
 
-
+        $scope.showClient = function (client) {
+            $scope.client = client;
+        };
 
     }]);
