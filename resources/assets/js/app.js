@@ -71,6 +71,11 @@ app.config([
 
     $routeProvider
 
+        .when('/', {
+            templateUrl: 'build/views/home.html',
+            controller: 'HomeController',
+            title: 'Dashboard'
+        })
         .when('/home', {
             templateUrl: 'build/views/home.html',
             controller: 'HomeController',
