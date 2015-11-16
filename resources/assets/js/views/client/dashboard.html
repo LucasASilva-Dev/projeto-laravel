@@ -94,18 +94,18 @@
 
                                 <table class="table">
                                     <thead>
-                                    <tr>
-                                        <th>Nome</th>
-                                        <th>Data de entrega</th>
-                                        <th>Status</th>
-                                    </tr>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Data de entrega</th>
+                                            <th>Status</th>
+                                        </tr>
                                     </thead>
-                                    <tbody ng-repeat="o in client.project.data">
-                                    <tr>
-                                        <td>{{ o.name }}</td>
-                                        <td>{{ o.due_date ||dateBr }}</td>
-                                        <td>{{ o.status }}</td>
-                                    </tr>
+                                    <tbody>
+                                        <tr ng-repeat="c in client.projects.data">
+                                            <td>{{ c.name }}</td>
+                                            <td>{{ c.due_date | dateBr }}</td>
+                                            <td>{{ c.status }}</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
