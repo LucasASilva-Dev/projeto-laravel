@@ -9,7 +9,7 @@ class OauthClients extends Model
     protected $fillable = [
         'id',
         'secret',
-        'name',
+        'name'
     ];
 
 }

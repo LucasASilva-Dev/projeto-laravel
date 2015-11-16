@@ -16,7 +16,7 @@ class ClientTransformer extends TransformerAbstract
 {
 
     protected $defaultIncludes = [
-        'projects'
+       'projects'
     ];
 
     /**
