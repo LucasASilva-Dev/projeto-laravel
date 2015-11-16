@@ -89,7 +89,8 @@
 
 		<!--DIRECTIVES-->
 		<script src="{{asset('build/js/directives/projectFileDownload.js')}}"></script>
-        <script src="{{asset('build/js/directives/loginForm.js')}}"></script>
+		<script src="{{asset('build/js/directives/tabProject.js')}}"></script>
+		<script src="{{asset('build/js/directives/loginForm.js')}}"></script>
         <script src="{{asset('build/js/directives/loadTemplate.js')}}"></script>
         <script src="{{asset('build/js/directives/menuActivated.js')}}"></script>
 

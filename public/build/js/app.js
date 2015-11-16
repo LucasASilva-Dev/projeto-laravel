@@ -124,6 +124,11 @@ app.config([
         })
 
         //Rotas de Projects
+        .when('/projects/dashboard', {
+            templateUrl: 'build/views/project/dashboard.html',
+            controller: 'ProjectDashboardController',
+            title: 'Project'
+        })
         .when('/projects', {
             templateUrl: 'build/views/project/list.html',
             controller: 'ProjectListController',
