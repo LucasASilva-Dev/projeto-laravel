@@ -15,8 +15,10 @@ class ProjectTransformer extends TransformerAbstract
 {
     protected $defaultIncludes = [
         'client',
-        'members'
-
+        'members',
+        'notes',
+        'files',
+        'tasks'
     ];
 
     public function transform(Project $project)
@@ -31,13 +33,11 @@ class ProjectTransformer extends TransformerAbstract
             'progress' => (int)$project->progress,
             'status' => $project->status,
             'due_date' => $project->due_date,
-            'is_member' => $project->owner_id != \Authorizer::getResourceOwnerId()
+            'is_member' => $project->owner_id != \Authorizer::getResourceOwnerId(),
+            'tasks_count' => $project->tasks->count(),
+            'tasks_opened' => $this->countTasksOpened($project)
         ];
 
-    }
-    public function includeMembers(Project $project)
-    {
-        return $this->collection($project->members, new MemberTransformer());
     }
 
     public function includeClient(Project $project)
@@ -46,5 +46,37 @@ class ProjectTransformer extends TransformerAbstract
 
         return $this->item($client, new ClientTransformer() );
     }
+
+    public function includeMembers(Project $project)
+    {
+        return $this->collection($project->members, new MemberTransformer());
+    }
+
+    public function includeNotes(Project $project)
+    {
+        return $this->collection($project->notes, new ProjectNoteTransformer());
+    }
+
+    public function includeFiles(Project $project)
+    {
+        return $this->collection($project->files, new ProjectFileTransformer());
+    }
+
+    public function includeTasks(Project $project)
+    {
+        return $this->collection($project->tasks, new ProjectTaskTransformer());
+    }
+
+    public function countTasksOpened(Project $project){
+        $count = 0;
+        foreach($project->tasks as $o){
+            if($o->status == 1){
+                $count++;
+            }
+        }
+        return $count;
+    }
+
+
 
 }

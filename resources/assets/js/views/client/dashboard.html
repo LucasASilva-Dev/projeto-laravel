@@ -104,7 +104,7 @@
                                         <tr ng-repeat="c in client.projects.data">
                                             <td>{{ c.name }}</td>
                                             <td>{{ c.due_date | dateBr }}</td>
-                                            <td>{{ c.status }}</td>
+                                            <td><load-status id-status="{{ c.status }}" view="false"></load-status></td>
                                         </tr>
                                     </tbody>
                                 </table>
