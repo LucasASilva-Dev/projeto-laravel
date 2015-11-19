@@ -117,14 +117,5 @@
 	@else
 		<script src="{{elixir('js/all.js')}}"></script>
 	@endif
-<script type="text/javascript">
-	var socket = new Pusher('90dc3185b30ded26ad5e');
-	var channel = socket.subscribe('user.1');
-	channel.bind('CodeProject\\Events\\TaskWasIncluded',
-		function(data) {
-			console.log(data);
-		}
-	);
-</script>
 </body>
 </html>

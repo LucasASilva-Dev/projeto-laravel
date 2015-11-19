@@ -16,6 +16,7 @@ angular.module('app.services',['ngResource']);
 app.provider('appConfig', function () {
   var config = {
       baseUrl: 'http://localhost:8000',
+      pusherKey: '90dc3185b30ded26ad5e',
       project: {
           status: [
               {value: 1, label: 'Nao Iniciado'},
@@ -256,7 +257,34 @@ app.config([
 
 }]);
 
-app.run(['$rootScope', '$location', '$http', '$modal', 'httpBuffer', 'OAuth', function($rootScope, $location, http, $modal, httpBuffer, OAuth) {
+app.run(['$rootScope', '$location', '$http', '$modal', '$cookies', '$pusher', 'httpBuffer', 'OAuth', 'appConfig',
+    function($rootScope, $location, http, $modal, $cookies, $pusher, httpBuffer, OAuth, appConfig) {
+
+    $rootScope.$on('pusher-build', function (event, data) {
+        if(data.next.$$route.originalPath != '/login'){
+            if(OAuth.isAuthenticated()){
+                if(!window.client){
+                    window.client = new Pusher(appConfig.pusherKey);
+                    var pusher = $pusher(window.client);
+
+                    var channel = pusher.subscribe('user.'+$cookies.getObject('user').id);
+                    channel.bind('CodeProject\\Events\\TaskWasIncluded',
+                    function(data) {
+                        console.log(data);
+                    });
+                }
+            }
+        }
+    });
+
+    $rootScope.$on('pusher-destroy', function (event, data) {
+        if(data.next.$$route.originalPath == '/login'){
+            if(window.client){
+                window.client.disconnect();
+                window.client = null;
+            }
+        }
+    });
 
     $rootScope.$on('$routeChangeStart', function (event, next, current) {
         if(next.$$route.originalPath != '/login'){
@@ -264,6 +292,9 @@ app.run(['$rootScope', '$location', '$http', '$modal', 'httpBuffer', 'OAuth', fu
                 $location.path('login');
             }
         }
+
+        $rootScope.$emit('pusher-build',{next: next});
+        $rootScope.$emit('pusher-destroy',{next: next});
     });
 
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
