@@ -5,7 +5,7 @@ var app = angular.module('app',[
     'ngRoute','angular-oauth2','app.controllers','app.services','app.filters','app.directives',
     'ui.bootstrap.typeahead','ui.bootstrap.tpls','ui.bootstrap.modal',
     'ui.bootstrap.datepicker','ngFileUpload','http-auth-interceptor', 'angularUtils.directives.dirPagination',
-    'ui.bootstrap.dropdown'
+    'ui.bootstrap.dropdown','pusher-angular'
 ]);
 
 angular.module('app.controllers',['ngMessages','angular-oauth2']);
@@ -258,7 +258,7 @@ app.config([
 
 app.run(['$rootScope', '$location', '$http', '$modal', 'httpBuffer', 'OAuth', function($rootScope, $location, http, $modal, httpBuffer, OAuth) {
 
-    $rootScope.$on('$routeChangeStart', function (event,next,current) {
+    $rootScope.$on('$routeChangeStart', function (event, next, current) {
         if(next.$$route.originalPath != '/login'){
             if(!OAuth.isAuthenticated()){
                 $location.path('login');

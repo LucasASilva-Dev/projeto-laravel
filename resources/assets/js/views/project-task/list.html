@@ -7,11 +7,11 @@
                 </div>
                 <div class="panel-body">
                     <div class="pull-right col-md-10">
-                        <form name="form" method="POST" class="form-inline" role="form" ng-submit="salvar()">
+                        <form name="form" method="POST" class="form-inline" role="form" ng-submit="save()">
                             <div class="form-group" ng-class="{'has-error': !form.name.$valid && form.name.$touched}">
                                 <label class="col-md-2 control-label">Name</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="name" ng-model="projectTasks.name" required />
+                                    <input type="text" class="form-control" name="name" ng-model="projectTask.name" required />
                                 </div>
                             </div>
                             <div class="form-group">
@@ -34,7 +34,7 @@
 
                         </thead>
                         <tbody>
-                            <tr ng-repeat="o in projectTask">
+                            <tr ng-repeat="o in projectTasks">
                                 <td>{{o.name}}</td>
                                 <td>{{o.start_date | dateBr}}</td>
                                 <td>{{o.due_date | dateBr}}</td>
