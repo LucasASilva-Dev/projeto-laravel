@@ -3,9 +3,7 @@
  */
 angular.module('app.controllers')
     .controller('HomeController', ['$scope', '$cookies', '$pusher', '$timeout', function ($scope, $cookies, $pusher, $timeout){
-
         $scope.tasks = [];
-        s
         var pusher = $pusher(window.client);
         var channel = pusher.subscribe('user.'+$cookies.getObject('user').id);
         channel.bind('CodeProject\\Events\\TaskWasIncluded',
@@ -15,6 +13,6 @@ angular.module('app.controllers')
                 }
                 $timeout(function () {
                     $scope.tasks.unshift(data.task);
-                }, 300);
+                }, 1000);
             });
     }]);
