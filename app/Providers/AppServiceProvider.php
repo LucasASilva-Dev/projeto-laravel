@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        ProjectTask::create(function($task){
+        ProjectTask::created(function($task){
              Event::fire(new TaskWasIncluded($task));
         });
     }
