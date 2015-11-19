@@ -9,9 +9,8 @@
                             <div class="form-group" ng-class="{'has-error': !form.member_id.$valid && form.member_id.$touched}">
                                 <label class="col-md-2 control-label">Nome: </label>
                                 <div class="col-md-6">
-                                    <input class="form-control" type="text"  name="member_id"
-                                           ng-model="userSelected"
-                                           typeahead="o as o.name for o in getUsers($viewValue)|limitTo:10"
+                                    <input autocomplete="off" class="form-control" type="text"  name="member_id" ng-model="userSelected"
+                                           typeahead="o as o.name for o in getUsers($viewValue)"
                                            typeahead-input-formatter="formatName($model)"
                                            typeahead-on-select="selectUser($item)"
                                            typeahead-editable="false" required/>
@@ -36,7 +35,7 @@
 
                         </thead>
                         <tbody>
-                            <tr ng-repeat="o in projectMember">
+                            <tr ng-repeat="o in projectMembers">
                                 <td>{{o.user.data.name}}</td>
                                 <td>
                                     <a ng-href="#project/{{o.project_id}}/member/{{o.project_member_id}}/remove" class="btn btn-danger btn-sm">

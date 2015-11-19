@@ -32,24 +32,10 @@ class ClientService
 
 
     public function create(array $data){
-
-        try{
-            $this->validator->with($data)->passesOrFail();
-            return $this->repository->create($data);
-        } catch(ValidatorException $e){
-
-            return [
-                'error' => true,
-                'message' => $e->getMessageBag()
-            ];
-
-        }
-
-        //Enviar um email
-        //Disparar notificação
-        //Postar um tweet
-
+        $this->validator->with($data)->passesOrFail();
+        return $this->repository->create($data);
     }
+
 
     public function update(array $data, $id){
 

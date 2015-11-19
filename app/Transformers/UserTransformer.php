@@ -18,6 +18,7 @@ class UserTransformer extends TransformerAbstract
     {
 
         return [
+            'id' => $o->id,
             'name' => $o->name,
             'email' => $o->email,
             'created_at' => $o->created_at,

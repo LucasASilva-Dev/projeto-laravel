@@ -3,8 +3,8 @@
  */
 angular.module('app.controllers')
     .controller('ProjectMemberListController', [
-        '$scope', '$routeParams', 'ProjectMember', 'User',
-        function ($scope, $routeParams, ProjectMember, User){
+        '$scope', '$routeParams', '$q', '$filter', 'ProjectMember', 'User',
+        function ($scope, $routeParams, $q, $filter, ProjectMember, User){
 
             $scope.projectMember = new ProjectMember();
 
@@ -14,13 +14,13 @@ angular.module('app.controllers')
                         id: $routeParams.id
                     }).then( function(){
                         $scope.projectMember = new ProjectMember();
-                        $scope.loadMember();
+                        $scope.loadMembers();
                     });
                 }
             };
 
-            $scope.loadMember = function () {
-                $scope.projectMember = ProjectMember.query({
+            $scope.loadMembers = function () {
+                $scope.projectMembers = ProjectMember.query({
                     id: $routeParams.id,
                     orderBy: 'id',
                     sortedBy: 'desc'
@@ -34,17 +34,25 @@ angular.module('app.controllers')
                 return '';
             };
 
-            $scope.getUsers = function(name) {
-                return User.query({
+            $scope.getUsers = function (name) {
+                var deffered = $q.defer();
+                User.query({
                     search: name,
                     searchFields: 'name:like'
-                }).$promise;
+                }, function (data) {
+                    var result = $filter('limitTo')(data.data,10);
+                    deffered.resolve(result);
+                }, function(error){
+                    deffered.reject(error);
+                });
+                return deffered.promise;
+
             };
 
             $scope.selectUser = function (item) {
                 $scope.projectMember.member_id = item.id;
             };
 
-            $scope.loadMember();
+            $scope.loadMembers();
 
     }]);

@@ -10,6 +10,11 @@ angular.module('app.controllers')
             if($scope.form.$valid){
                 $scope.client.$save().then( function(){
                     $location.path('/clients');
+                }, function (error) {
+                    $scope.error= {
+                        error: error.error,
+                        message: error.message
+                    }
                 })
             }
         }
