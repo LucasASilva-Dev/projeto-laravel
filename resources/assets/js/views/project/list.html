@@ -22,12 +22,21 @@
                                 <td>{{o.client.data.name}}</td>
                                 <td>{{o.progress}}</td>
                                 <td>{{o.due_date | dateBr}}</td>
-                                <td>
+                                <td align="center">
                                     <a ng-href="#project/{{o.id}}/edit" class="btn btn-info btn-sm">
-                                        Editar
+                                        Edit
                                     </a>
                                     <a ng-href="#project/{{o.id}}/remove" class="btn btn-danger btn-sm">
-                                        Excluir
+                                        Destroy
+                                    </a><br><br>
+                                    <a ng-href="#project/{{o.id}}/tasks" class="btn btn-success btn-sm">
+                                        Tasks
+                                    </a>
+                                    <a ng-href="#project/{{o.id}}/members" class="btn btn-warning btn-sm">
+                                        Members
+                                    </a>
+                                    <a ng-href="#project/{{o.id}}/notes" class="btn btn-info btn-sm">
+                                        Notes
                                     </a>
                                 </td>
                             </tr>
