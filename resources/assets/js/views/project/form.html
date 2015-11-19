@@ -18,7 +18,7 @@
 
     <div class="col-md-6">
         <input type="text" autocomplete="off" name="client_id" class="form-control" ng-model="clientSelected"
-               typeahead="o as o.name for o in getClients($viewValue)|limitTo:10" required
+               typeahead="o as o.name for o in getClients($viewValue)" required
                typeahead-input-formatter="formatName($model)"
                typeahead-on-select="selectClient($item)"
                typeahead-editable="false"/>
