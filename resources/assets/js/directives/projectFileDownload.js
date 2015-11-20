@@ -3,7 +3,7 @@
  */
 angular.module('app.directives')
     .directive('projectFileDownload',
-    ['appConfig', 'ProjectFile', '$timeout', function(appConfig, ProjectFile, $timeout){
+    ['$window', 'appConfig', 'ProjectFile', '$timeout', function($window, appConfig,  ProjectFile, $timeout){
         return {
             restrict: 'E',
             templateUrl: appConfig.baseUrl + '/build/views/templates/projectFileDownload.html',
@@ -14,10 +14,13 @@ angular.module('app.directives')
                 scope.$on('salvar-arquivo', function (event, data) {
                     $(anchor).removeClass('disabled');
                     $(anchor).text('Save File');
-                    $(anchor).attr({
-                        href: 'data:application-octet-stream;base64,' + data.file,
-                        download: data.name
+                    blobUtil.base64StringToBlob(data.file).then(function (blob) {
+                        $(anchor).attr({
+                            href: $window.URL.createObjectURL(blob, data.mime_type),
+                            download: data.name
+                        });
                     });
+
 
                     $timeout(function () {
                         scope.downloadFile = function(){};

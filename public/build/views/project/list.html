@@ -23,20 +23,23 @@
                                 <td>{{o.progress}}</td>
                                 <td>{{o.due_date | dateBr}}</td>
                                 <td align="center">
-                                    <a ng-href="#project/{{o.id}}/edit" class="btn btn-info btn-sm">
+                                    <a ng-href="#project/{{o.id}}/edit" class="btn btn-default btn-sm">
                                         Edit
                                     </a>
                                     <a ng-href="#project/{{o.id}}/remove" class="btn btn-danger btn-sm">
                                         Destroy
                                     </a><br><br>
-                                    <a ng-href="#project/{{o.id}}/tasks" class="btn btn-success btn-sm">
+                                    <a ng-href="#project/{{o.id}}/tasks" class="btn btn-info btn-sm">
                                         Tasks
                                     </a>
                                     <a ng-href="#project/{{o.id}}/members" class="btn btn-warning btn-sm">
                                         Members
                                     </a>
-                                    <a ng-href="#project/{{o.id}}/notes" class="btn btn-info btn-sm">
+                                    <a ng-href="#project/{{o.id}}/notes" class="btn btn-success btn-sm">
                                         Notes
+                                    </a>
+                                    <a ng-href="#project/{{o.id}}/files" class="btn btn-primary btn-sm">
+                                        Files
                                     </a>
                                 </td>
                             </tr>

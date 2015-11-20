@@ -569,7 +569,7 @@ Copyright (c) 2015 Daniel Eden
 
 .jello{
     -webkit-transform-origin: center;
-            transform-origin: center
+            transform-origin: center;
 
     -webkit-animation-name:jello;
             animation-name:jello;}
