@@ -16,7 +16,7 @@ angular.module('app.controllers')
                     $timeout(function () {
                         var frame = $window.open('','_blank','width=500,height=500');
                         frame.document.open();
-                        frame.document.write(div.htm());
+                        frame.document.write(div.html());
                         frame.document.close();
                     })
                 });
